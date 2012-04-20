@@ -9,12 +9,25 @@
 			border:1px solid green;
 		}
 	</ui:style>
-	<g:HTMLPanel>
-		Hello,
-		<g:Button styleName="{style.important}" ui:field="button" />
-		
+
+
+
 	
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Label 2</g:Label>
+			<g:TextBox ui:field='text1'>Some Text</g:TextBox>					
+			<g:Button styleName="{style.important}" ui:field="button" text="zomg"/>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel>
+			<g:Label>Label 2 </g:Label>
+			<g:TextBox ui:field='text2'>More Text</g:TextBox>
+		</g:HorizontalPanel>
+
+		<g:ListBox ui:field='listBox' visibleItemCount='7' />
+
+		<g:Button ui:field='submit'> Submit </g:Button>
+	</g:VerticalPanel>
 	
-		
-	</g:HTMLPanel>
 </ui:UiBinder> 

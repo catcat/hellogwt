@@ -9,6 +9,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
+import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.Widget;
 
 public class Platinum extends Composite implements HasText {
@@ -26,6 +27,9 @@ public class Platinum extends Composite implements HasText {
 	@UiField
 	Button button;
 
+	@UiField
+	ListBox listBox;
+	
 	public Platinum(String firstName) {
 		initWidget(uiBinder.createAndBindUi(this));
 		button.setText(firstName);
@@ -33,7 +37,9 @@ public class Platinum extends Composite implements HasText {
 
 	@UiHandler("button")
 	void onClick(ClickEvent e) {
-		Window.alert("Hello!");
+		String rand = Integer.toString((int)(Math.random()*10000.));
+		Window.alert("Oh hey " + rand);
+		listBox.addItem("item"+rand);
 	}
 
 	public void setText(String text) {
@@ -43,5 +49,10 @@ public class Platinum extends Composite implements HasText {
 	public String getText() {
 		return button.getText();
 	}
+	
+	 @UiHandler("submit")
+	  void handleClick(ClickEvent e) {
+	    Window.alert("Submitted:"+listBox.getItemText(listBox.getSelectedIndex()));	   
+	  }
 
 }

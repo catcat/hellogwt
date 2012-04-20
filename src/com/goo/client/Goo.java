@@ -63,12 +63,14 @@ public class Goo implements EntryPoint {
 	/**
 	 * This is the entry point method.
 	 */
+	@Override
 	public void onModuleLoad() {
 
 		final Button buttonA = new Button("ButtonA");
 
 		final Image img = new Image();
 
+		//test	
 		final Label label = new Label();
 		final MyTable myTable = new MyTable(null);
 		buttonA.addClickHandler(new ClickHandler() {
@@ -96,6 +98,7 @@ public class Goo implements EntryPoint {
 				// gooService.App.getInstance().getMyProductModels(new
 				// MyExtCallback(listStore));
 				// service.getPosts((PagingLoadConfig) loadConfig, callback);
+				
 				GooService.App.getInstance().getMyProductModels(callback);
 			}
 		};

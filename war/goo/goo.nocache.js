@@ -244,7 +244,7 @@ function goo(){
   $stats && $stats({moduleName:'goo', sessionId:$sessionId_0, subSystem:'startup', evtGroup:'bootstrap', millis:(new Date).getTime(), type:'selectingPermutation'});
   if (!isHostedMode()) {
     try {
-      strongName = 'BC43B98CDF135B38E5F930FF8C0E46C3';
+      strongName = 'A00AEFFBFE29C1B1FD9CF4FF19E580AA';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = Number(strongName.substring(idx + 1));
