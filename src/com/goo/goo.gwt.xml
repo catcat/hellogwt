@@ -1,0 +1,22 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="goo">
+    <!--
+    <inherits name='com.google.gwt.user.User'></inherits>
+	<inherits name='com.extjs.gxt.ui.GXT'/>
+	-->
+	<inherits name='com.extjs.gxt.ui.GXT'/>
+  	<inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+  	<set-property name="user.agent" value="safari" />
+  	
+    <entry-point class='com.goo.client.Goo'/>
+    
+    
+    <!-- 
+	<source path="com.goo" /> 
+	-->
+	
+    <servlet path='/GooService' class='com.goo.server.GooServiceImpl'/>
+
+</module>
