@@ -1,0 +1,2 @@
+serviceClass: com.goo.client.GooService
+path: 98ADE5888D7534B11FDDCC358DC0A5B2.gwt.rpc

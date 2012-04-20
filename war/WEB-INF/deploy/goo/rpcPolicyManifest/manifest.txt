@@ -1,0 +1,3 @@
+# Module goo
+# RPC service class, partial path of RPC policy file
+com.goo.client.GooService, 98ADE5888D7534B11FDDCC358DC0A5B2.gwt.rpc

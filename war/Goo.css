@@ -1,0 +1,20 @@
+/** Add css rules here for your application. */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+body, td, a, div, .p {
+    font-family: arial, sans-serif
+}
+
+table.simple_grid_test {
+	border:1px solid green;	
+	border-collapse:collapse;
+}
+
+table.simple_grid_test td{
+	border:1px solid blue;	
+}
